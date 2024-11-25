@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon_123.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon_123.ico" type="image/x-icon">
+    
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehir-i Lezzet - Ana Sayfa</title>
+
+
+
+</head>
+
+<body>
+<div class="container-fluid p-0" style="background-color: rgba(97, 31, 31, 0.781);">
+
+  <!--HEADER-->
+
+  <header class="d-flex" id="baslangic">
+    <div class="container-fluid mt-4" id="container1" style="z-index: 9999;">
+      <div class="row">
+        <div class="col-2 px-5 bg-red text-white color_change">
+          <a id="bir" href="anasayfa.html"><img src="assets/img/logo.png" alt="logo" width="120" height="100"></a>
+
+        </div>
+
+        <div class="col-8 p-3 bg-red text-white color_change">
+       
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">ANASAYFA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about">HAKKIMIZDA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/menu">MENÜ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/events">ETKİNLİKLER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/chefs">ŞEFLER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/gallery">FOTOĞRAFLAR</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      HESABIM
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" style="background-color: (133, 45, 45, 0.7);" href="/reservations">REZERVASYONLARIM</a>
+                      <a class="dropdown-item" href="#">BILGI</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">İLETİŞİM</a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+
+          </nav>
+
+     
+
+        </div>
+
+        <div class="col-2 bg-red text-white pt-4 color_change">
+          <a href="#" class="btn btn-book">REZERVASYON YAP</a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </header>
+
+  <br><br><br>
+
+  <!--HERO-->
+
+  <section id="hero" class="d-flex">
+   <div class="container position-relative" style="background-color: transparent">
+
+    <div class="row" style="text-align: center;">
+      <div class="col-12">
+        <br><br>
+        <h3 class="hr-lines" style="font-family: 'Lucida Handwriting', cursive;">şefler</h3>
+        <br><br>
+
+      </div>
+
+    </div>
+
+    <div class="row row-chefs" style="margin-left: 30px;">
+
+      <div class="col-4">
+        <div class="chef1">
+          <div class="info-chef1" style="text-align: center;">
+          <img src="assets/img/chef3.jpg" alt="chef1" width="300" height="400">
+          <br><br>
+          <h5 style="font-family: 'Lucida Handwriting', cursive;">Danillo Zana</h5>
+          
+        </div>
+
+        <br>
+
+        <hr style="color:antiquewhite">
+
+        <div class="review1">
+            <br>
+            <p>yorum, puan birakin:</p>
+            <br>
+
+            <form id="review-form-1">
+              <table>
+                <tr>
+              <td><label for="puan_1">Puan (1-10):</label></td>
+              <td><input type="number" name="puan_1" id="puan_1" min="1" max="10" required /></td>
+               </tr>
+
+               <tr>
+              <td><label for="yorum_1">Review:</label></td>
+              <td><textarea id="yorum_1" name="yorum_1" rows="3" cols="30" required></textarea></td>
+              </tr>
+
+            </table>
+
+              <input style="margin-left: 80px" type="submit" value="Gonderin">
+
+            
+            </form>
+      </div>
+
+      <br><br><br>
+
+          <div id="reviews1"  class="review-container">
+            
+            
+
+          </div>
+
+        </div>
+        
+      </div>
+
+
+    <div class="col-4">
+      <div class="chef2"  style="margin-left: -20px;">
+        
+        <div class="info-chef2" style="text-align: center;">
+          <br><br>
+          <img src="assets/img/chef6.jpg" alt="chef2" width="410" height="300">
+           <br><br>
+          <h5 style="font-family: 'Lucida Handwriting', cursive;">Refika Birgul</h5>
+
+         </div>
+         <br><br><br>
+         <hr style="color: antiquewhite">
+
+
+         <div class="review2">
+          <br><br>
+          <p>yorum, puan birakin:</p>
+          <br>
+
+         <form id="review-form-2">
+          <table>
+          <tr>
+            <td><label for="puan_2">Puan (1-10):</label></td>
+            <td><input type="number" id="puan_2" name="puan_2" min="1" max="10" required /></td>   
+         </tr>
+
+         <tr>
+          <td><label for="yorum_2">Review:</label></td>
+          <td><textarea id="yorum_2" name="yorum_2" rows="3" cols="30" required></textarea></td>
+         </tr>
+        
+        </table>
+        <button style="margin-left: 80px" type="submit">Gonderin</button>
+        </form>
+
+        </div>
+
+        <br><br><br>
+
+          
+         <div id="reviews2" class="review-container">
+
+         </div>
+
+      </div>
+    </div>
+
+      <div class="col-4">
+        <div class="chef3">
+          <div class="info-chef3" style="text-align: center;">
+
+          <img src="assets/img/chef7.jpg" alt="chef3" width="300" height="400">
+          <br><br>
+          <h5 style="font-family: 'Lucida Handwriting', cursive;">Arda Turkmen</h5>
+
+        </div>
+        <br>
+        <hr style="color:antiquewhite">
+
+        <div class="review3">
+          <br>
+          <p>yorum, puan birakin:</p>
+          <br>
+
+         <form id="review-form-3">
+          <table>
+          <tr>
+            <td><label for="puan_3">Puan (1-10):</label></td>
+            <td><input type="number" id="puan_3" name="puan_3" min="1" max="10" required /></td>   
+         </tr>
+
+         <tr>
+          <td><label for="yorum_3">Review:</label></td>
+          <td><textarea id="yorum_3" name="yorum_3" rows="3" cols="30" required></textarea></td>
+         </tr>
+        
+        </table>
+        <button style="margin-left: 80px;" type="submit">Gonderin</button>
+        </form>
+
+        </div>
+        <br><br><br>
+
+
+
+
+        <div id="reviews3" class="review-container">
+
+        </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  
+
+    </div>
+
+   
+
+  </section>
+
+  <br><br><br><br><br><br><br><br><br><br><br>
+
+  <a href="#baslangic" id="upbutton" class="up-button" style="color:rgb(255, 255, 255);"><i class="fas fa-arrow-up"></i></a>
+
+  <br><br><br><br><br>
+
+</div>
+
+
+
+<div class="container-fluid bg-red-opaque" >
+
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3" style="padding-top: 50px; padding-bottom: 50px;">
+              
+                <img src="assets/img/logo.png" alt="logo" width="150" height="150">
+  
+            </div>
+  
+            <div class="col-3" style="padding-top: 50px; padding-bottom: 30px;">
+              <strong style="color:rgb(255, 255, 255)">ILETISIM</strong>
+              <p style="color:antiquewhite">
+                <i class="fas fa-map-marker-alt"></i>
+                Yeni Istanbul Cd. No. 56<br>
+                Selcuklu-Konya<br><br>
+                <i class="fas fa-phone"></i>
+                <strong>Tel:</strong> +90 (332) 636 78 56<br>
+                <i class="fas fa-envelope"></i>
+                <strong>E-posta:</strong> info@example.com<br>
+              </p>
+  
+  
+            </div>
+  
+            <div class="col-3" style="padding-top: 50px; padding-bottom: 30px;">
+              <strong style="color:rgb(255, 255, 255)">SOSYAL MEDYA - BIZI TAKIP EDIN</strong><br>
+              <i class="fab fa-facebook-square"></i>
+              <a href="#"> Facebook</a> <br>
+              <i class="fab fa-twitter-square"></i> 
+              <a href="#"> Twitter</a> <br>
+              <i class="fab fa-instagram-square"></i> 
+              <a href="#"> Instagram</a> <br>
+              <i class="fab fa-youtube"></i>
+              <a href="#"> Youtube</a> <br>
+              
+  
+            </div>
+  
+            <div class="col-3 footer-newsletter" style="padding-top: 50px; padding-bottom: 30px;">
+              <h4>Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </footer>
+  
+  
+  
+  </div>
+  
+  
+  
+  <script>
+    
+const review_form_1=document.getElementById('review-form-1');
+
+review_form_1.addEventListener('submit', async (event) => {
+  
+  event.preventDefault();
+  console.log('ok');
+
+  const authToken = localStorage.getItem('authToken');
+  const username = localStorage.getItem('username');
+  const chefID =1;
+  
+  if (authToken && username) {
+
+  const puan_1 = document.getElementById('puan_1').value;
+  const yorum_1 = document.getElementById('yorum_1').value;
+  
+
+  try{
+
+    const response = await fetch('/reviews/addReview', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${authToken}`,
+        },
+        body: JSON.stringify({ username, chefID, rating: puan_1, comment: yorum_1 }),
+      });
+
+      if (response.ok) {
+        console.log('Review submitted successfully');
+        // Clear the form fields
+        document.getElementById('puan_1').value = '';
+        document.getElementById('yorum_1').value = '';
+        getReviewsForAllChefs();
+      } else {
+        console.error('Error submitting review:', await response.json());
+      }
+
+  }
+  catch (error) {
+      console.error('Error:', error);
+  }
+
+
+  }
+  else{
+    console.log('yorum birakmak icin giris yapmalisiniz !');
+    const errorM=document.createElement('div');
+    errorM.textContent='yorum birakmak icin giris yapmalisiniz !';
+    errorM.classList.add('error-message');
+
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+
+    closeButton.addEventListener('click', () => {
+    errorM.remove();
+    });
+
+    errorM.appendChild(closeButton);
+    document.body.appendChild(errorM);
+  }
+
+});
+
+   
+const review_form_2=document.getElementById('review-form-2');
+
+review_form_2.addEventListener('submit', async (event) => {
+  
+  event.preventDefault();
+  console.log('ok');
+
+  const authToken = localStorage.getItem('authToken');
+  const username = localStorage.getItem('username');
+  const chefID =2;
+  
+  if (authToken && username) {
+
+  const puan_2 = document.getElementById('puan_2').value;
+  const yorum_2 = document.getElementById('yorum_2').value;
+  
+
+  try{
+
+    const response = await fetch('/reviews/addReview', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${authToken}`,
+        },
+        body: JSON.stringify({ username, chefID, rating: puan_2, comment: yorum_2 }),
+      });
+
+      if (response.ok) {
+        console.log('Review submitted successfully');
+        // Clear the form fields
+        document.getElementById('puan_2').value = '';
+        document.getElementById('yorum_2').value = '';
+        getReviewsForAllChefs();
+      } else {
+        console.error('Error submitting review:', await response.json());
+      }
+
+  }
+  catch (error) {
+      console.error('Error:', error);
+  }
+
+
+  }
+  else{
+    console.log('yorum birakmak icin giris yapmalisiniz !');
+    const errorM=document.createElement('div');
+    errorM.textContent='yorum birakmak icin giris yapmalisiniz !';
+    errorM.classList.add('error-message');
+
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+
+    closeButton.addEventListener('click', () => {
+    errorM.remove();
+    });
+
+    errorM.appendChild(closeButton);
+    document.body.appendChild(errorM);
+  }
+
+});
+
+const review_form_3=document.getElementById('review-form-3');
+
+review_form_3.addEventListener('submit', async (event) => {
+  
+  event.preventDefault();
+  console.log('ok');
+
+  const authToken = localStorage.getItem('authToken');
+  const username = localStorage.getItem('username');
+  const chefID =3;
+  
+  if (authToken && username) {
+
+  const puan_3 = document.getElementById('puan_3').value;
+  const yorum_3 = document.getElementById('yorum_3').value;
+  console.log(puan_3);
+  console.log(yorum_3);
+  console.log('simdi post requesti yapmak uzereyim');
+
+  try{
+
+    const response = await fetch('/reviews/addReview', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${authToken}`,
+        },
+        body: JSON.stringify({ username, chefID, rating: puan_3, comment: yorum_3 }),
+      });
+
+      if (response.ok) {
+        console.log('Review submitted successfully');
+        // Clear the form fields
+        document.getElementById('puan_3').value = '';
+        document.getElementById('yorum_3').value = '';
+        getReviewsForAllChefs();
+      } else {
+        console.error('Error submitting review:', await response.json());
+      }
+
+  }
+  catch (error) {
+      console.error('Error:', error);
+  }
+
+
+  }
+  else{
+    console.log('yorum birakmak icin giris yapmalisiniz !');
+    const errorM=document.createElement('div');
+    errorM.textContent='yorum birakmak icin giris yapmalisiniz !';
+    errorM.classList.add('error-message');
+
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+
+    closeButton.addEventListener('click', () => {
+    errorM.remove();
+    });
+
+    errorM.appendChild(closeButton);
+    document.body.appendChild(errorM);
+  }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  getReviewsForAllChefs();
+
+});
+
+
+// function addDeleteEventListeners() {
+//   // Select all the buttons with the text "sil"
+//   const deleteButtons = document.querySelectorAll('button');
+
+//   deleteButtons.forEach((button) => {
+//     if (button.textContent.trim() === 'sil') {
+//       button.addEventListener('click', async () => {
+//         // Get the review ID from the parent div's ID
+//         const reviewId = button.closest('div').id;
+
+//         try {
+//           // Make a DELETE request to the server to delete the review
+//           const response = await fetch(`/reviews/${reviewId}`, {
+//             method: 'DELETE',
+//             headers: {
+//               'Content-Type': 'application/json',
+//               'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
+//             },
+//           });
+
+//           if (response.ok) {
+//             console.log('Review deleted successfully');
+//             // Refetch the list of reviews or update the UI as needed
+//             await getAllReviews();
+//           } else {
+//             console.error('Error deleting the review:', await response.json());
+//           }
+//         } catch (error) {
+//           console.error('Error:', error);
+//         }
+//       });
+//     }
+//   });
+// }
+
+
+
+async function getReviewsForAllChefs() {
+  try {
+    // Fetch reviews for Chef 1
+    await getReviews(1, "reviews1");
+
+    // Fetch reviews for Chef 2
+    await getReviews(2, 'reviews2');
+
+    // Fetch reviews for Chef 3
+    await getReviews(3, 'reviews3');
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+async function getReviews(chefId, reviewsContainerId) {
+  try {
+    const response = await fetch(`/reviews/${chefId}`);
+    const reviews = await response.json();
+
+    console.log('i have the reviews from the db !')
+    const reviewsContainer = document.getElementById(reviewsContainerId);
+
+    if (reviewsContainer) {
+      reviewsContainer.innerHTML = '';
+
+      if (reviews.length > 0) {
+        reviews.forEach((review) => {
+          const reviewElement = document.createElement('div');
+          reviewElement.classList.add('review');
+          reviewElement.textContent = `Rating: ${review.rating} | Review: ${review.comment} (by ${review.username})`;
+          reviewElement.id=review._id;
+          reviewsContainer.appendChild(reviewElement);
+          const authToken = localStorage.getItem('authToken');
+          const username = localStorage.getItem('username');
+          if (authToken && username){
+            if(review.username==username){
+              const deleteButton=document.createElement('button');
+              deleteButton.textContent='sil';
+              reviewElement.appendChild(deleteButton);
+              deleteButton.addEventListener('click', async () => {
+                console.log('review ID');
+                console.log(review._id);
+                removeReview(review._id);
+
+
+              });
+            }
+          }
+        });
+      } else {
+        console.log(`No reviews found for chef with ID ${chefId}.`);
+      }
+    }
+     else {
+      console.error(`Element with ID '${reviewsContainerId}' not found.`);
+    }
+    
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+async function removeReview(reviewId) {
+  try {
+    // Check the format of the reviewId
+    let formattedReviewId;
+    if (typeof reviewId === 'string' && reviewId.startsWith('$oid:')) {
+      // If the reviewId starts with "$oid:", remove the prefix and parse the ObjectId
+      formattedReviewId = ObjectId(reviewId.replace('$oid:', ''));
+    } else if (typeof reviewId === 'string' && reviewId.startsWith('ObjectId(')) {
+      // If the reviewId is in the "ObjectId('...')" format, extract the ObjectId
+      formattedReviewId = ObjectId(reviewId.replace('ObjectId(', '').replace(')', ''));
+    } else {
+      // If the reviewId is already in the correct format, use it as is
+      formattedReviewId = reviewId;
+    }
+
+    // Make the DELETE request to the server
+    const response = await fetch(`/reviews/${formattedReviewId}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
+      },
+    });
+
+    if (response.ok) {
+      console.log('Review deleted successfully');
+      // Refetch the list of reviews or update the UI as needed
+      await getReviewsForAllChefs();
+    } else {
+      console.error('Error deleting the review:', await response.json());
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+
+
+
+  </script>
+  
+  
+  
+
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+  </body>
+  
+  
+  </html>

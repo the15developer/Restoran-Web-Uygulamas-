@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="icon" href="favicon_123.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon_123.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/css/styles_admin.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+
+	<meta charset="utf-8">
+	<title>Sehir-i Lezzet - Admin Sayfasi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	
+
+	
+
+</head>
+<body>
+
+
+	<div class="admin-dashboard">
+
+		<div class="sidebar">
+		  
+
+		  <img src="assets/img/logo.png" alt="logo" width="150" height="130" style="margin-left: 35px">
+		
+
+		  <br><br><br>
+		  <hr>
+
+
+          <br>
+		  <ul>
+			<li><a class="sidebar-nav-links" style="font-size: 25px;" href="#admin-home">Home</a></li><br>
+			<li><a class="sidebar-nav-links" style="font-size: 25px;" href="#admin-rezervasyonlar">Rezervasyonlar</a></li><br>
+			<li><a class="sidebar-nav-links" style="font-size: 25px;" href="#admin-menu">Menü</a></li><br>
+			<!-- <li><a class="sidebar-nav-links" style="font-size: 25px;" href="#admin-etkinlikler">Etkinlikler</a></li><br> -->
+      <li><a class="sidebar-nav-links" style="font-size: 25px;" href="#admin-photos">Fotoğraflar</a></li><br>
+
+		  </ul>
+
+		  <br>
+
+		  <hr>
+
+		  <br>
+
+
+		  <a class="sidebar-nav-links" style="font-size: 20px;" href="/">
+			<i style="font-size: 17px;" class="fas fa-door-open"></i>
+			<i style="font-size: 17px;" class="fas fa-arrow-left"></i>
+			
+			&nbspkullanıcı modu
+		
+		</a>
+
+		</div>
+
+
+		<div class="content">
+		  
+		  <h1 style="color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);">Admin Sayfasına Hoş Geldiniz ! </h1>
+		  <p>Bu sayfadan uygulamanızı yönetebilirsiniz.</p>
+
+		  <br><hr id="admin-home" class="line"><br>
+
+		  <h1 style="color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);">HOME</h1>
+
+		  <div class="container" id="homeC" style="padding: 20px;">
+
+        <div id="homeR">
+
+        </div>
+
+        <br><br>
+
+        <div id="homeM">
+
+          
+
+          <div id="homeMB">
+
+          </div>
+
+          
+
+          <div id="homeMA">
+
+          </div>
+
+          
+
+          <div id="homeMT">
+
+          </div>
+
+          
+
+          <div id="homeMI">
+
+          </div>
+
+        </div>
+
+
+			
+		  </div>
+
+		  <br><br><hr id="admin-rezervasyonlar" class="line"><br>
+
+		  <div id="RESERVATIONS">
+
+		  <h1 style="color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);">REZERVASYONLAR</h1>
+
+      <div style="background-color: rgb(110, 35, 35); padding: 15px;">
+
+		  <div class="container" id="ReservationsC" style="padding: 20px; color: white; display: flex; flex-wrap: wrap; gap: 16px;">
+
+		  </div>
+
+		  <br><br><br>
+
+		  <div id="RFORM" style="border: solid 2px  antiquewhite; padding: 20px;">
+
+			<h3 style="text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);">REZERVASYON OLUSTUR</h3>
+
+			<form id="reservation_form">
+				<table>
+				<tr>
+				  <td><label for="isim">ISIM:</label></td>
+				  <td><input type="text" id="isim" name="name" required /></td>   
+			   </tr>
+	  
+			   <tr>
+				<td><label for="soyisim">SOYISIM:</label></td>
+				<td><input type="text" id="soyisim" name="surname" required /></td>   
+			   </tr>
+
+			   <tr>
+				<td><label for="tarih">TARIH:</label></td>
+				<td><input type="date" id="tarih" name="date" required /></td>   
+			   </tr>
+
+			   <tr>
+				<td><label for="saat">SAAT:</label></td>
+				<td><input type="number" id="saat" name="hour" min="9" max="21" required /></td>   
+			   </tr>
+
+
+			  
+			  </table>
+			  <br>
+			  <button id="rezervasyon-olustur-button" style="margin-left: 78px; width: 70px" type="submit">oluştur</button>
+			  </form>
+
+		  </div>
+
+    </div >
+
+     	</div>
+
+
+		  <br><br><hr id="admin-menu" class="line"><br>
+
+		  <h1 style="color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);">MENÜ</h1>
+
+		  <div class="container" style="background-color: rgb(110, 35, 35); padding: 15px;">
+
+			
+
+			<br>
+
+	
+
+			<h3>başlangıçlar</h3>
+
+			<br>
+
+			<div id="baslangiclar" style="padding: 20px; color: white;">
+
+
+			</div>
+
+			<br><br>
+
+			<h3>ana yemekler</h3>
+
+			<div id="ana-yemekler" style="padding: 20px; color: white;">
+
+			</div>
+
+			<br><br>
+
+			<h3>tatlılar</h3>
+
+			<div id="tatlilar" style="padding: 20px; color: white;">
+
+			</div>
+
+			<br><br>
+
+			<h3>içecekler</h3>
+
+			<div id="icecekler" style="padding: 20px; color: white;">
+
+			</div>
+
+			<br><br>
+
+			<div id="menu-ekle" style="border: solid 2px antiquewhite; padding: 20px;">
+
+				<h3>YEMEK EKLE</h3>
+
+				<form id="menu_form">
+					<table>
+					<tr>
+					  <td><label for="yemek_ismi">YEMEK ISMI:</label></td>
+					  <td><input type="text" id="yemek_ismi" name="name" required /></td>   
+				   </tr>
+		  
+				   <tr>
+					<td><label for="kategori">KATEGORI:</label></td>
+					<td><input type="text" id="kategori" name="category" required /></td>   
+				   </tr>
+	
+				   <tr>
+					<td><label for="fiyat">FIYAT:</label></td>
+					<td><input type="number" id="fiyat" name="price" required /></td>   
+				   </tr>
+	
+	
+				  
+				  </table>
+				  <br>
+				  <button id="yemek-ekle-button" style="margin-left: 105px; width: 50px" type="submit">ekle</button>
+				  </form>
+
+
+			</div>
+
+
+		  </div>
+
+		  <!-- <br><br><hr id="admin-etkinlikler" class="line"><br>
+
+		  
+		  <h1 style="color: white;">ETKİNLİKLER</h1>
+
+		  <div class="container" style="border: solid 2px rgb(215, 204, 204);">
+
+			<br><br>
+
+
+		  </div> -->
+
+      <br><br><hr id="admin-photos" class="line"><br>
+
+		  
+		  <h1 style="color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);">FOTOĞRAFLAR</h1>
+
+		  <div class="container" style="background-color: rgb(110, 35, 35);">
+
+			<br><br>
+
+      <div class="container" id="photo-container" style="margin-left: 60px; margin-right: 40px;">
+
+
+      </div>
+
+      <br><br>
+
+      <div class="selection-info" style=" margin-left: 50px; margin-right: 50px; display: flex; justify-content: center; align-items: center;">
+        0/5 fotoğraf seçili
+      </div>
+
+      <br><br>
+
+      <div class="container" id="photo-islemler" style="margin-left: 50px; margin-right: 50px; display: flex; justify-content: center; align-items: center;">
+
+        <br><br>
+        <button id="save-button-photo">CAROUSEL'E EKLE</button>
+        <br><br>
+
+
+      </div>
+
+      <br><br><br><br>
+
+
+		  </div>
+
+      <br><br><br>
+
+
+
+
+		</div>
+	  </div>
+
+
+</body>
+
+<script>
+
+const saveButtonPhoto = document.getElementById('save-button-photo');
+
+let selectedPhotoIds = [];
+
+async function getAllPhotos() {
+  try {
+   
+    const response = await fetch('/admin-dashboard/photos');
+    const photos = await response.json();
+
+    console.log("I have the photos from the db !");
+
+    
+    const photoContainer = document.getElementById('photo-container');
+
+    
+    photoContainer.innerHTML = '';
+
+    
+    photos.forEach((photo) => {
+      // const photoWrapper = document.createElement('div');
+      // photoElement.classList.add('photo-wrapper');
+
+      const photoElement = document.createElement('img');
+      photoElement.src = photo.imageUrl;
+      photoElement.width = 200;
+      photoElement.height = 150;
+      photoElement.classList.add('photo-thumbnail');
+
+      photoElement.dataset.id = photo.imageUrl; 
+
+
+      photoElement.addEventListener('click', handlePhotoClick);
+
+   
+      // photoContainer.appendChild(photoWrapper);
+      photoContainer.appendChild(photoElement);
+    });
+  } catch (error) {
+    console.error('Error fetching photos:', error);
+  }
+}
+
+
+
+saveButtonPhoto.addEventListener('click', async () => {
+  try {
+  
+    const deleteResponse = await fetch('/admin-dashboard/delete-selected-photos', {
+      method: 'DELETE',
+    });
+
+    if (deleteResponse.ok) {
+      console.log('All selected photos deleted from the database');
+
+      
+      const newPhotoSelectedRecords = selectedPhotoIds.slice(0, 5).map((photoId, index) => {
+        return {
+          imageUrl: selectedPhotoIds[index],
+          title: `Image`,
+          description: `This is a photo in the carousel.`,
+        };
+      });
+
+      const saveResponse = await fetch('/admin-dashboard/save-selected-photos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newPhotoSelectedRecords),
+      });
+
+      if (saveResponse.ok) {
+        console.log('New selected photos saved to the database');
+   
+        selectedPhotoIds = [];
+
+        updateSelectionInfo();
+
+
+        const messageBox = document.createElement('div');
+        messageBox.classList.add('success-message-box');
+        messageBox.textContent = 'Fotograflar basari ile eklenmistir !';
+        document.body.appendChild(messageBox);
+
+        const photoContainerItems = document.querySelectorAll('.photo-thumbnail');
+        photoContainerItems.forEach((item) => {
+          item.classList.remove('selected');
+        });
+
+        setTimeout(() => {
+          messageBox.remove();
+        }, 2000);
+
+      } else {
+        console.error('Error saving new selected photos:', await saveResponse.text());
+      }
+    } else {
+      console.error('Error deleting selected photos:', await deleteResponse.text());
+    }
+  } catch (error) {
+    console.error('Error deleting and saving selected photos:', error);
+  }
+});
+
+
+
+const selectionInfo = document.querySelector('.selection-info');
+
+
+function handlePhotoClick(event) {
+  const photoId = event.target.dataset.id;
+  const photoIndex = selectedPhotoIds.indexOf(photoId);
+
+  if (photoIndex === -1) {
+    
+    if (selectedPhotoIds.length === 5) {
+  
+      const oldestPhotoId = selectedPhotoIds.shift();
+      const oldestPhotoElement = document.querySelector(`img[data-id="${oldestPhotoId}"]`);
+      oldestPhotoElement.classList.remove('selected');
+    }
+    selectedPhotoIds.push(photoId);
+    event.target.classList.add('selected');
+  } else {
+   
+    selectedPhotoIds.splice(photoIndex, 1);
+    event.target.classList.remove('selected');
+  }
+
+  console.log('Selected photo IDs:', selectedPhotoIds);
+  updateSelectionInfo();
+}
+
+function updateSelectionInfo() {
+  selectionInfo.textContent = `${selectedPhotoIds.length}/5 fotoğraf seçili`;
+}
+
+
+
+let reservationsNumber = 0;
+let basl=0;
+let anay = 0;
+let tatl = 0;
+let icek=0;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const userRole = localStorage.getItem("userRole");
+  const bodyElement = document.body;
+
+  if (userRole === "admin") {
+	getReservations();
+	getAllMenu();
+  getAllPhotos();
+   
+  } else {
+    
+    bodyElement.innerHTML = "<h1>Access Denied</h1>";
+  }
+
+
+
+});
+
+function displayRVariable(){
+  const container=document.getElementById('homeR');
+
+  if(reservationsNumber==0){
+    container.textContent=`Hiç bir rezervasyon yok. Büyük ihtimalle yeni başlamışsınız. `;
+  }
+  else if(reservationsNumber<=10){
+    container.textContent=`${reservationsNumber} rezervasyon var. Reklam stratejilerinizi geliştirerek rezervasyonların sayısını arttırabilirsiniz. `;
+  }
+  else{
+    container.textContent=`${reservationsNumber} rezervasyonunuz var. İyi gidiyor ! Müşteriler restoranınızı beğeniyor ! `;
+  }
+  
+}
+
+
+
+function displayFoods(){
+
+  const containerB = document.getElementById('homeMB');
+  
+
+  if(basl<6){
+    containerB.textContent=`${basl} tane başlangıç yemeği. Daha fazla ekleyebilirsiniz ! `;
+  }
+  else{
+    containerB.textContent=`${basl} tane başlangıç yemeği. Çeşitlilik sağlamakta başarılısınız! ! `;
+  }
+
+  const containerA = document.getElementById('homeMA');
+  
+
+  if(anay<6){
+    containerA.textContent=`${anay} tane ana yemek var. Daha fazla ekleyebilirsiniz ! `;
+  }
+  else{
+    containerA.textContent=`${anay} tane ana yemek var. Çeşitlilik sağlamakta başarılısınız! ! `;
+  }
+
+  const containerT = document.getElementById('homeMT');
+
+  if(tatl<6){
+    containerT.textContent=`${tatl} tane tatlı çeşidi var. Daha fazla ekleyebilirsiniz ! `;
+  }
+  else{
+    containerT.textContent=`${tatl} tane tatlı çeşidi var. Çeşitlilik sağlamakta başarılısınız! ! `;
+  }
+
+  const containerI = document.getElementById('homeMI');
+
+if(icek<6){
+  containerI.textContent=`${icek} tane içecek çeşidi var. Daha fazla ekleyebilirsiniz ! `;
+}
+else{
+  containerI.textContent=`${icek} tane içecek çeşidi var. Çeşitlilik sağlamakta başarılısınız! ! `;
+}
+
+
+
+
+}
+
+
+async function getAllMenu(){
+	try{
+		const response = await fetch('admin-dashboard/menu');
+		const foods = await response.json();
+
+		console.log('i have the foods from the db !');
+
+		const baslangiclarContainer = document.getElementById('baslangiclar');
+        const anaYemeklerContainer = document.getElementById('ana-yemekler');
+        const tatlilarContainer = document.getElementById('tatlilar');
+        const iceceklerContainer = document.getElementById('icecekler');
+
+		baslangiclarContainer.innerHTML = '';
+        anaYemeklerContainer.innerHTML = '';
+        tatlilarContainer.innerHTML = '';
+        iceceklerContainer.innerHTML = '';
+
+        basl=0;
+        anay = 0;
+        tatl = 0;
+        icek=0;
+
+		foods.forEach((food) => {
+
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      // foodElement.textContent = `${food.name}  -  ${food.price}₺`;
+
+      const foodElement1=document.createElement('div');
+      foodElement1.classList.add('food-item1');
+
+
+
+      const nameInput = document.createElement('input');
+      nameInput.value = food.name;
+      nameInput.classList.add('food-name');
+
+      const priceInput = document.createElement('input');
+      priceInput.value = food.price;
+      priceInput.classList.add('food-price');
+
+      foodElement1.appendChild(nameInput);
+      foodElement1.appendChild(priceInput);
+      
+
+      nameInput.readOnly = true;
+      priceInput.readOnly = true;
+
+	  const buttonContainer = document.createElement('div');
+	  buttonContainer.classList.add('food-buttons');
+	  
+    foodElement1.appendChild(buttonContainer);
+
+		  const editButton = document.createElement('button');
+		  editButton.classList.add('food-button-edit');
+		  editButton.textContent='edit';
+
+      buttonContainer.appendChild(editButton);
+
+
+      const saveButton = document.createElement('button');
+      saveButton.classList.add('food-button-save');
+      saveButton.textContent = 'save';
+      saveButton.style.display = 'none';
+
+      buttonContainer.appendChild(saveButton);
+
+
+      const deleteButton = document.createElement('button');
+	  deleteButton.classList.add('food-button-delete');
+	  deleteButton.textContent='sil';
+
+    buttonContainer.appendChild(deleteButton);
+
+    foodElement.appendChild(foodElement1);
+
+    editButton.addEventListener('click', () => {
+        nameInput.readOnly = false;
+        priceInput.readOnly = false;
+        editButton.style.display = 'none';
+        //buttonContainer.removeChild(editButton);
+
+        saveButton.style.display = 'inline-block';
+      });
+
+
+      saveButton.addEventListener('click', async () => {
+        const updatedName = nameInput.value;
+        const updatedPrice = priceInput.value;
+
+        try {
+          const response = await fetch(`/admin-dashboard/menu/${food._id}`, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name: updatedName, price: updatedPrice }),
+          });
+
+          if (response.ok) {
+            console.log('Food updated successfully!');
+            nameInput.readOnly = true;
+            priceInput.readOnly = true;
+            editButton.style.display = 'inline-block';
+            saveButton.style.display = 'none';
+            getAllMenu(); 
+          } else {
+            console.error('Error updating food:', response.status);
+          }
+        } catch (error) {
+          console.error('Error updating food:', error);
+        }
+      });
+
+	
+        deleteButton.addEventListener('click', async () => {
+                console.log('food ID');
+                console.log(food._id);
+                await removeFood(food._id);
+
+
+              });
+
+      const foodElement2=document.createElement('div');
+
+      const imageContainer = document.createElement('div');
+      
+      foodElement2.appendChild(imageContainer);
+      foodElement2.classList.add('food-item1');
+
+      foodElement.appendChild(foodElement2);
+
+      imageContainer.classList.add("food-image-container");
+
+      
+      const imageInput = document.createElement('input');
+      imageInput.type = 'file';
+      imageInput.accept = 'image/*';
+      imageInput.classList.add('food-image-input');
+      imageContainer.appendChild(imageInput);
+
+      const setImageButton = document.createElement('button');
+      setImageButton.classList.add('food-button-set-image');
+      setImageButton.textContent = 'Set Image';
+      imageContainer.appendChild(setImageButton);
+
+      const containerForImage = document.createElement('div');
+
+      containerForImage.classList.add('food-image-container2');
+
+      const foodImageElement = document.createElement('img');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImageElement.src = imagePath;
+      foodImageElement.alt = food.name;
+      foodImageElement.classList.add('food-image');
+
+      containerForImage.appendChild(foodImageElement);
+      foodElement2.appendChild(containerForImage);
+
+      
+      
+
+    setImageButton.addEventListener('click', async () => {
+    const imageFile = imageInput.files[0];
+
+    
+
+    if (!imageFile) {
+        console.error('Please select an image file');
+        return;
+    }
+
+    console.log("request is being made...");
+
+    const formData = new FormData();
+    formData.append('image', imageFile);
+
+    try {
+        const response = await fetch(`/admin-dashboard/menu/${food._id}/image`, {
+            method: 'PUT', 
+            body: formData, 
+        });
+
+        if (response.ok) {
+            const updatedFood = await response.json();
+            console.log('Image URL updated successfully:', updatedFood);
+            getAllMenu();
+           
+        } else {
+            console.error('Error updating image URL:', response.status);
+        }
+    } catch (error) {
+        console.error('Error updating image URL:', error);
+    }
+});
+
+
+
+
+      switch (food.category) {
+        case 'baslangiclar':
+          baslangiclarContainer.appendChild(foodElement);
+          basl++;
+          break;
+        case 'ana-yemekler':
+          anaYemeklerContainer.appendChild(foodElement);
+          anay++;
+          break;
+        case 'tatlilar':
+          tatlilarContainer.appendChild(foodElement);
+          tatl++;
+          break;
+        case 'icecekler':
+          iceceklerContainer.appendChild(foodElement);
+          icek++;
+          break;
+        default:
+          console.error(`Unknown category: ${food.category}`);
+      }
+    });
+
+    displayFoods();
+
+
+
+	}
+	catch (error) {
+    console.error('Error fetching menu:', error);
+	}
+}
+
+
+
+async function getReservations() {
+  try {
+
+	const response = await fetch('admin-dashboard/reservations');
+
+    const reservations = await response.json();
+
+    console.log('i have the reservations from the db !');
+    const reservationsContainer = document.getElementById('ReservationsC');
+
+    if (reservationsContainer) {
+		reservationsContainer.innerHTML = '';
+    reservationsNumber=0;
+
+      if (reservations.length > 0) {
+        reservations.forEach((reservation) => {
+          reservationsNumber++;
+          const reservationElement = document.createElement('div');
+          reservationElement.classList.add('reservation');
+		      const reservationDate = new Date(reservation.date);
+
+          const formattedDate = reservationDate.toLocaleDateString('tr-TR', {
+           day: '2-digit',
+           month: '2-digit',
+           year: 'numeric',
+    });
+      
+
+          reservationElement.textContent = `ISIM: ${reservation.name} | SOYISIM: ${reservation.surname} | TARIH: ${formattedDate} | SAAT : ${reservation.hour}`;
+          reservationElement.id=reservation._id;
+          reservationsContainer.appendChild(reservationElement);
+
+    
+      const statusContainer = document.createElement('div');
+          statusContainer.classList.add('status-container');
+
+          const statusLabel = document.createElement('label');
+          statusLabel.textContent = 'Durum: ';
+
+          const statusNow=document.createElement('label');
+          statusNow.textContent=` ${reservation.status} `;
+
+          const statusSelect = document.createElement('select');
+          statusSelect.classList.add('status-select');
+
+          const approvedOption = document.createElement('option');
+          approvedOption.value = 'approved';
+          approvedOption.textContent = 'Onaylanmis';
+
+          const pendingOption = document.createElement('option');
+          pendingOption.value = 'pending';
+          pendingOption.textContent = 'Bekliyor';
+
+          const rejectedOption = document.createElement('option');
+          rejectedOption.value = 'rejected';
+          rejectedOption.textContent = 'Reddedilmis';
+
+          statusSelect.appendChild(approvedOption);
+          statusSelect.appendChild(pendingOption);
+          statusSelect.appendChild(rejectedOption);
+
+          statusSelect.value = reservation.status; 
+
+          statusSelect.addEventListener('change', async () => {
+            const newStatus = statusSelect.value;
+            await updateReservationStatus(reservation._id, newStatus);
+          });
+
+          statusContainer.appendChild(statusLabel);
+          statusContainer.appendChild(statusNow);
+          statusContainer.appendChild(statusSelect);
+
+          reservationElement.appendChild(statusContainer);
+
+
+          deleteButton = document.createElement('button');
+		  deleteButton.classList.add('delete-button');
+		  deleteButton.textContent='SİL';
+
+		  deleteButton.addEventListener('click', async () => {
+                console.log('reservation ID');
+                console.log(reservation._id);
+                await removeReservation(reservation._id);
+
+
+              });
+
+		  reservationElement.appendChild(deleteButton);
+
+
+
+
+        });
+
+        displayRVariable();
+      } else {
+        console.log(`No reservations found.`);
+		reservationsContainer.textContent = 'No reservations found.';
+      }
+    }
+     else {
+      console.error(`Element with ID ... not found.`);
+    }
+    
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+async function updateReservationStatus(reservationId, newStatus) {
+  try {
+    const response = await fetch(`/admin-dashboard/reservations/${reservationId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ status: newStatus }),
+    });
+
+    if (response.ok) {
+      console.log(`Reservation status updated to: ${newStatus}`);
+      await getReservations();
+    } else {
+      console.error(`Error updating reservation status: ${await response.text()}`);
+    }
+  } catch (error) {
+    console.error('Error updating reservation status:', error);
+  }
+}
+
+
+async function removeReservation(reservationId) {
+  try {
+    const response = await fetch(`/admin-dashboard/reservations/${reservationId}`, {
+      method: 'DELETE',
+    });
+
+    if (response.ok) {
+      console.log('Reservation deleted successfully');
+ 
+      await getReservations();
+    } else {
+      console.error('Error deleting reservation:', await response.json());
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+
+async function removeFood(foodId){
+	try {
+    const response = await fetch(`/admin-dashboard/menu/${foodId}`, {
+      method: 'DELETE',
+    });
+
+    if (response.ok) {
+      console.log('Food deleted successfully');
+     
+      await getAllMenu();
+    } else {
+      console.error('Error deleting food:', await response.json());
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+
+}
+
+const rform=document.getElementById('reservation_form');
+
+rform.addEventListener('submit', async (event) => {
+  
+  event.preventDefault();
+  console.log('ok');
+  
+
+  const name = document.getElementById('isim').value;
+  const surname = document.getElementById('soyisim').value;
+  const username=localStorage.getItem('username');
+  const date = document.getElementById('tarih').value;
+  const hour = document.getElementById('saat').value;
+  
+
+  try{
+
+    const response = await fetch('/admin-dashboard/reservations/addReservation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, surname, username, date, hour }),
+      });
+
+      if (response.ok) {
+        console.log('Reservation submitted successfully');
+    
+        document.getElementById('isim').value = '';
+        document.getElementById('soyisim').value = '';
+		document.getElementById('tarih').value = '';
+        document.getElementById('saat').value = '';
+
+        await getReservations();
+      } else {
+        console.error('Error submitting reservation:', await response.json());
+      }
+
+  }
+  catch (error) {
+      console.error('Error:', error);
+  }
+
+  
+
+});
+
+
+const mform=document.getElementById('menu_form');
+
+mform.addEventListener('submit', async (event) => {
+  
+  event.preventDefault();
+  console.log('ok');
+  
+
+  const name = document.getElementById('yemek_ismi').value;
+  const category = document.getElementById('kategori').value;
+  const price = document.getElementById('fiyat').value;
+
+  try{
+
+    const response = await fetch('/admin-dashboard/menu/addFood', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, price, category }),
+      });
+
+      if (response.ok) {
+		const data = await response.json();
+        console.log('Food added successfully:', data.message);
+        console.log('Food added successfully');
+       
+        document.getElementById('yemek_ismi').value = '';
+        document.getElementById('fiyat').value = '';
+		document.getElementById('kategori').value = '';
+      
+        await getAllMenu();
+      } else {
+        console.error('Error adding food:', await response.json());
+      }
+
+  }
+  catch (error) {
+      console.error('Error:', error);
+  }
+
+  
+
+});
+
+
+const navButtons = document.querySelectorAll('.sidebar-nav-links');
+
+navButtons.forEach(btn => {
+  btn.addEventListener('click', (event) => {
+    const targetId = event.target.dataset.target;
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>

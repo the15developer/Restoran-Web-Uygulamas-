@@ -1,0 +1,434 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(142, 59, 59);
+    color: antiquewhite;
+   }
+
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: rgb(110, 35, 35);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 15vw;
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 20vw;
+  }
+  
+
+  .sidebar-nav-links{
+    padding: 20px;
+
+  }
+
+  .sidebar-nav-links:hover{
+    background-color: rgb(72, 22, 22);
+  }
+
+
+
+  .reservation {
+    background-color:  #cda45ea6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    
+
+   
+  }
+  
+
+  .reservation:hover{
+    background-color: #765d30 ;
+   
+  }
+
+  .delete-button {
+  
+   
+    cursor: pointer;
+    display: block;
+    background-color:  rgb(142, 59, 59);
+    color: #fff;
+    border: none;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .status-button {
+  
+    
+    cursor: pointer;
+    display: none;
+    background-color:  rgb(142, 59, 59);
+    color: #fff;
+    border: none;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+
+  
+
+  .reservation:hover .status-button {
+    display: block;
+  
+  }
+
+
+  .reservation .delete-button:hover{
+    background-color:  rgb(72, 22, 22);
+  }
+
+  .reservation .status-button:hover{
+    background-color:  rgb(72, 22, 22);
+  }
+
+
+
+
+  /* Food category containers */
+#baslangiclar, #ana-yemekler, #tatlilar, #icecekler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Food item divs */
+.food-item {
+  background-color: #cda45ea6;
+  padding: 16px;
+  width: 280px;
+  height:120px;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin:15px;
+}
+
+.food-item1{
+  display:flex;
+}
+
+
+.food-item:hover{
+  background-color: #765d30 ;
+ 
+}
+
+.food-item .food-buttons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left:10px;
+  margin-bottom:10px;
+}
+
+/* .food-item:hover .food-buttons {
+  display: flex;
+  gap: 8px;
+} */
+
+.food-item .food-buttons button {
+  width: 40px;
+  background-color:  rgb(142, 59, 59);
+  color: #fff;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-item .food-buttons button:hover {
+  
+  background-color:  rgb(72, 22, 22);
+  
+}
+
+.food-button-set-image{
+  background-color:  rgb(142, 59, 59);
+  color: #fff;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.food-button-set-image:hover{
+  background-color:  rgb(72, 22, 22);
+}
+
+
+
+.food-name{
+  width:100px;
+}
+
+.food-price{
+  width: 50px;
+}
+
+.food-image{
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.food-image-input{
+  width: 90px;
+  height: 70px;
+  
+}
+
+.food-image-container2{
+  width: 75px;
+  height: 75px;
+  margin-top: 5px;
+ 
+}
+
+
+
+.food-item .food-item1 .food-image-container{
+  display: block;
+  /* gap: 8px;
+  flex-shrink: 0; */
+  
+  margin-left:0px;
+  margin-right:10px;
+  margin-top:10px;
+  
+  
+}
+
+.food-item .food-item1 .food-image-container button{
+   margin-top: 10px;
+   margin-right: 20px;
+}
+
+
+#homeC{
+  color: whitesmoke;
+  font-size: 27px;
+  
+       
+}
+
+#homeR, #homeMB, #homeMA, #homeMT, #homeMI{
+  padding: 10px;
+  background-color: rgba(124, 35, 35, 0.686);
+ 
+  width: 1000px;
+  
+  color: rgb(255, 248, 237);
+
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+#homeMI{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+#homeR{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* #homeR:hover, #homeMB:hover, #homeMA:hover, #homeMT:hover, #homeMI:hover{
+  background-color: rgb(120, 49, 49) ;
+
+} */
+
+hr.line {
+  border-top: 1px solid  antiquewhite;
+  border-bottom: 2px solid antiquewhite ;
+  width: 100%;
+ 
+}
+
+
+.photo-thumbnail {
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-thumbnail.selected {
+  border: 2px solid #000000;
+  box-shadow: 0 0 10px #000000;
+}
+
+
+.photo-thumbnail:hover {
+  cursor: pointer;
+  
+}
+
+
+
+.success-message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 9999;
+  font-size: 18px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#save-button-photo{
+  color: white;
+  background-color:  #cda45ea6;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+#save-button-photo:hover{
+  background-color: #765d30;
+  cursor: pointer;
+}
+
+#yemek-ekle-button{
+  color: white;
+  background-color:  #cda45ea6;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+#yemek-ekle-button:hover{
+  background-color: #765d30;
+  cursor: pointer;
+}
+
+#rezervasyon-olustur-button{
+  color: white;
+  background-color:  #cda45ea6;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+#rezervasyon-olustur-button:hover{
+  background-color: #765d30;
+  cursor: pointer;
+}
+
+
+.status {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+/* .status-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+} */
+
+.status-label {
+  /* margin-right: 10px; */
+  font-weight: bold;
+}
+
+.status-select {
+  float:right;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgb(142, 59, 59); 
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 0px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  /* width: 150px; */
+  text-align: center;
+
+  /* background-size: 20px 20px; */
+}
+
+
+
+.status-select:hover{
+  background-color: rgb(72, 22, 22);
+}
+
+.status-select option {
+  background-color: rgb(142, 59, 59); /* Red background for options */
+  color: #ffffff; /* White text color for options */
+  text-align: center;
+}
+

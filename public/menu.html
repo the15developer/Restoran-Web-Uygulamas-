@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon_123.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon_123.ico" type="image/x-icon">
+    
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehir-i Lezzet - Ana Sayfa</title>
+
+
+</head>
+
+<body>
+<div class="container-fluid p-0" style="background-color: rgba(97, 31, 31, 0.781);">
+
+  <!--HEADER-->
+
+  <header class="d-flex" id="baslangic">
+    <div class="container-fluid mt-4" id="container1" style="z-index: 9999;">
+      <div class="row">
+        <div class="col-2 px-5 bg-red text-white color_change">
+          <a id="bir" href="anasayfa.html"><img src="assets/img/logo.png" alt="logo" width="120" height="100"></a>
+
+        </div>
+
+        <div class="col-8 p-3 bg-red text-white color_change">
+       
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">ANASAYFA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about">HAKKIMIZDA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/menu">MENÜ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/events">ETKİNLİKLER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/chefs">ŞEFLER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/gallery">FOTOĞRAFLAR</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      HESABIM
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" style="background-color: (133, 45, 45, 0.7);" href="/reservations">REZERVASYONLARIM</a>
+                      <a class="dropdown-item" href="#">BILGI</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">İLETİŞİM</a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+
+          </nav>
+
+     
+
+        </div>
+
+        <div class="col-2 bg-red text-white pt-4 color_change">
+          <a href="#" class="btn btn-book">REZERVASYON YAP</a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </header>
+
+  <br><br><br>
+
+
+  <!--HERO-->
+
+  <section id="hero" class="d-flex">
+   
+
+    <div class="container position-relative" style="background-color: transparent">
+
+      <div class="row" style="text-align: center;">
+        <div class="col-12">
+          <br><br>
+          <h3 id="here" class="hr-lines" style="font-family: 'Lucida Handwriting', cursive;">menü</h3>
+          <br><br>
+
+        </div>
+
+      </div>
+      
+      <div class="row menu-div" style="text-align: center; margin-left: 50px; margin-right: 50px; color:white">
+        <div class="col-12" >
+          <br>
+          <a style="font-size: 20px;" id="menu1" class="menu-nav-link" href="#here"  onclick="showContent('content1')">&nbsp&nbsp&nbsp  BASLANGICLAR &nbsp&nbsp&nbsp&nbsp</a>
+          <a style="font-size: 20px;" id="menu2" class="menu-nav-link" href="#here"  onclick="showContent('content2')">  ANA YEMEKLER &nbsp&nbsp&nbsp&nbsp</a>
+          <a style="font-size: 20px;" id="menu3" class="menu-nav-link" href="#here"  onclick="showContent('content3')">  TATLILAR &nbsp&nbsp&nbsp&nbsp</a>
+          <a style="font-size: 20px;" id="menu4" class="menu-nav-link" href="#here"  onclick="showContent('content4')">  ICECEKLER &nbsp&nbsp&nbsp</a>
+          
+          <br><br><br><br>
+
+
+          <div id="content1" class="content container" style="color: rgb(255, 255, 255); font-size: 17px;">
+            <div class="row">
+
+              <div class="col-6" style="text-align: center;">
+                <!-- <p>
+              <img src="assets/img/antep_usulu_zeytinyagli_dolma-4961636b-b1da-4438-831a-3e90f7052d06.jpg" class="foto-yemek zoom-effect" alt="antep" width="50px" height="50px">
+                antep dolmasi                  60 ₺ <br><br> </p>
+               
+               <p>
+              <img src="assets/img/sogan-halkalari.jpg" class="foto-yemek zoom-effect" alt="antep" width="50px" height="50px">
+                kizarmis sogan halkalari       50 ₺ <br><br> </p>
+
+               <p>
+              <img src="assets/img/suzme-mercimek-corbasi-one-cikan.jpg" class="foto-yemek zoom-effect" alt="antep" width="50px" height="50px">
+                corbalar                       50 ₺ <br><br>
+              </p>
+              <p>
+              <img src="assets/img/icli-kofte.jpeg" class="foto-yemek zoom-effect" alt="antep" width="50px" height="50px">
+               icli kofte                     80 ₺ <br> 
+              </p> -->
+
+              </div>
+
+              <div class="col-6" style="text-align: center;">
+
+              <!-- <p> 
+              <img src="assets/img/falafel.jpeg" class="foto-yemek zoom-effect" alt="antep" width="50px" height="50px">
+               falafel tabak                  70 ₺ <br><br> </p>
+
+              <p>
+              <img src="assets/img/sigara-boregi.jpeg" class="foto-yemek zoom-effect" alt="antep" width="50px" height="50px">
+                sigara boregi                  50 ₺ <br><br> </p>
+              
+              <p>
+              <img src="assets/img/peynir-cubuklari.jpeg" class="foto-yemek zoom-effect zoom-effect" alt="antep" width="50px" height="50px">
+                peynir cubuklari               40 ₺ <br><br> </p>
+              
+              <p>
+              <img src="assets/img/aperatif.jpeg" class="foto-yemek zoom-effect" alt="antep" width="50px" height="50px" >
+              
+                aperatif kombosu               160 ₺ <br>
+
+              </p>
+
+              <br><br> -->
+
+              </div>
+
+              </div>
+            
+          </div>
+
+          <div id="content2" class="content container" style="color:white">
+
+            <div class="row">
+
+              <div class="col-6">
+                <!-- <p>· adana kebap                  150 ₺ <br>
+                  · izmir kofte      200 ₺ <br>
+                  · iskender kebabi                       200 ₺ <br>
+                  · buryan kebabi                     200 ₺ <br>
+                  · coban kavurma                  200 ₺ <br>
+                  · urfa kebap                 150 ₺ <br>
+                  · et tantuni              150 ₺ <br>
+                </p> -->
+
+              </div>
+
+              <div class="col-6">
+
+              <!-- <p> · tavuk sis               130 ₺ <br>
+                · arap tava                  200 ₺ <br>
+                · konya firin kebabi                 250 ₺ <br>
+                · kaburga dolmasi              250 ₺ <br>
+                · mumbar dolmasi              150 ₺ <br>
+                · perde pilavi              120 ₺ <br>
+                · balik              160 ₺ <br>
+                
+              </p> -->
+
+              </div>
+
+              </div>
+            
+
+
+          </div>
+
+          <div id="content3" class="content container" style="color:white">
+            <div class="row">
+
+              <div class="col-6">
+                <!-- <p>· fistikli baklava                 60 ₺ <br>
+               · sutlac       50 ₺ <br>
+               · sekerpare                       50 ₺ <br>
+               · trilece                     80 ₺ <br> 
+                </p> -->
+
+              </div>
+
+              <div class="col-6">
+
+              <!-- <p> · kunefe                  70 ₺ <br>
+               · gullac                  50 ₺ <br>
+               · kazandibi              40 ₺ <br>
+               · ekmek kadayifi               160 ₺ <br>
+
+              </p> -->
+
+              </div>
+
+              </div>
+            
+
+
+          </div>
+
+
+          <div id="content4" class="content container" style="color:white">
+            <div class="row">
+
+              <div class="col-6">
+                <!-- <p>· osmanli kahvesi  60 ₺ <br>
+               · siyah cay  50 ₺ <br>
+               · yesil cay                      50 ₺ <br>
+               · sicak cikolata                     80 ₺ <br> 
+               · salep                     80 ₺ <br> 
+
+                </p> -->
+
+              </div>
+
+              <div class="col-6">
+
+              <!-- <p> · su                  70 ₺ <br>
+               · ayran                  50 ₺ <br>
+               · taze limonata              40 ₺ <br>
+               · meyve suyu              40 ₺ <br>
+               · gazoz               160 ₺ <br>
+
+              </p> -->
+
+              </div>
+
+              </div>
+            
+
+          
+          </div>
+
+
+        </div>
+
+      </div>
+    
+    </div>
+
+  </section>
+
+  <br><br><br><br><br><br><br><br><br><br><br>
+
+  <a href="#baslangic" id="upbutton" class="up-button" style="color:rgb(255, 255, 255);"><i class="fas fa-arrow-up"></i></a>
+
+  <br><br><br><br><br>
+
+</div>
+
+
+
+<div class="container-fluid bg-red-opaque" >
+
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-3" style="padding-top: 50px; padding-bottom: 50px;">
+            
+              <img src="assets/img/logo.png" alt="logo" width="150" height="150">
+
+          </div>
+
+          <div class="col-3" style="padding-top: 50px; padding-bottom: 30px;">
+            <strong style="color:rgb(255, 255, 255)">ILETISIM</strong>
+            <p style="color:antiquewhite">
+              <i class="fas fa-map-marker-alt"></i>
+              Yeni Istanbul Cd. No. 56<br>
+              Selcuklu-Konya<br><br>
+              <i class="fas fa-phone"></i>
+              <strong>Tel:</strong> +90 (332) 636 78 56<br>
+              <i class="fas fa-envelope"></i>
+              <strong>E-posta:</strong> info@example.com<br>
+            </p>
+
+
+          </div>
+
+          <div class="col-3" style="padding-top: 50px; padding-bottom: 30px;">
+            <strong style="color:rgb(255, 255, 255)">SOSYAL MEDYA - BIZI TAKIP EDIN</strong><br>
+            <i class="fab fa-facebook-square"></i>
+            <a href="#"> Facebook</a> <br>
+            <i class="fab fa-twitter-square"></i> 
+            <a href="#"> Twitter</a> <br>
+            <i class="fab fa-instagram-square"></i> 
+            <a href="#"> Instagram</a> <br>
+            <i class="fab fa-youtube"></i>
+            <a href="#"> Youtube</a> <br>
+            
+
+          </div>
+
+          <div class="col-3 footer-newsletter" style="padding-top: 50px; padding-bottom: 30px;">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  
+	displayFoodItems();
+  
+
+});
+
+
+
+  async function displayFoodItems() {
+  try {
+    const response = await fetch('/menu/displayFoods');
+    const foods = await response.json();
+
+
+    const content1Container1 = document.querySelector('#content1 .row .col-6:first-child');
+    const content1Container2 = document.querySelector('#content1 .row .col-6:last-child');
+    const content2Container1 = document.querySelector('#content2 .row .col-6:first-child');
+    const content2Container2 = document.querySelector('#content2 .row .col-6:last-child');
+    const content3Container1 = document.querySelector('#content3 .row .col-6:first-child');
+    const content3Container2 = document.querySelector('#content3 .row .col-6:last-child');
+    const content4Container1 = document.querySelector('#content4 .row .col-6:first-child');
+    const content4Container2 = document.querySelector('#content4 .row .col-6:last-child');
+
+  
+    content1Container1.innerHTML = '';
+    content1Container2.innerHTML = '';
+    content2Container1.innerHTML = '';
+    content2Container2.innerHTML = '';
+    content3Container1.innerHTML = '';
+    content3Container2.innerHTML = '';
+    content4Container1.innerHTML = '';
+    content4Container2.innerHTML = '';
+
+   
+    const baslangiclarItems = foods.filter(food => food.category === 'baslangiclar');
+    const anaYemeklerItems = foods.filter(food => food.category === 'ana-yemekler');
+    const tatlilarItems = foods.filter(food => food.category === 'tatlilar');
+    const iceceklerItems = foods.filter(food => food.category === 'icecekler');
+
+  
+    baslangiclarItems.slice(0, 6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+      
+      content1Container1.appendChild(foodElement);
+    });
+    baslangiclarItems.slice(6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+
+      content1Container2.appendChild(foodElement);
+    });
+
+    anaYemeklerItems.slice(0, 6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+
+      content2Container1.appendChild(foodElement);
+    });
+    anaYemeklerItems.slice(6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+
+      content2Container2.appendChild(foodElement);
+    });
+
+    tatlilarItems.slice(0, 6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+
+      content3Container1.appendChild(foodElement);
+    });
+    tatlilarItems.slice(6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+
+      content3Container2.appendChild(foodElement);
+    });
+
+    iceceklerItems.slice(0, 6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+
+      content4Container1.appendChild(foodElement);
+    });
+    iceceklerItems.slice(6).forEach(food => {
+      const foodElement = document.createElement('div');
+      foodElement.classList.add('food-item');
+      foodElement.textContent = `${food.name} - ${food.price}₺`;
+
+      const foodImage=document.createElement('img');
+      foodImage.classList.add('food-image');
+      const imagePath = food.imageUrl.split('public')[1];
+      foodImage.src = imagePath;
+      foodElement.appendChild(foodImage);
+      
+      content4Container2.appendChild(foodElement);
+    });
+  } catch (error) {
+    console.error('Error fetching menu:', error);
+  }
+}
+
+
+</script>
+
+
+</body>
+
+
+</html>
