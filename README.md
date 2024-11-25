@@ -8,7 +8,7 @@ Overview
 This is a fully functional restaurant web application built using Node.js, Express.js, JavaScript, HTML, and CSS. The app provides an interactive interface for users to browse the menu, make reservations, and contact the restaurant. The backend is powered by Express.js, and the frontend is designed for a seamless user experience.
 
 
-![Restoran-Web-Uygulamas-](Screenshot 2024-06-04 130220.png)  
+![Restoran-Web-Uygulamas-/](Screenshot 2024-06-04 130220.png)  
 
 
 ## **Technologies Used**
