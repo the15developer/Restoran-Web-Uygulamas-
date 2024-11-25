@@ -4,11 +4,12 @@ HTML, CSS, JavaScript, Bootstrap, Node.js + Express.js ve MongoDB teknolojileri 
 
 I developed a restaurant web application with HTML, CSS, JavaScript, Bootstrap, Node.js + Express.js and MongoDB technologies. The current version can be followed on my Github account. The application implements important functionalities for clients and admins, like account creation and user authentication, access based on user role, admin dashboard for managing the application, ability to leave ratings and reviews, make reservations and requests/complaints and much more.
 
-Overview
+**Overview**
+
 This is a fully functional restaurant web application built using Node.js, Express.js, JavaScript, HTML, and CSS. The app provides an interactive interface for users to browse the menu, make reservations, and contact the restaurant. The backend is powered by Express.js, and the frontend is designed for a seamless user experience.
 
 
-![Restoran-Web-Uygulamasi](Main_page.png)  
+![Restaurant_main_page](Main_page.png)  
 
 
 ## **Technologies Used**
