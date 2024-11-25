@@ -7,57 +7,51 @@ I developed a restaurant web application with HTML, CSS, JavaScript, Bootstrap, 
 Overview
 This is a fully functional restaurant web application built using Node.js, Express.js, JavaScript, HTML, and CSS. The app provides an interactive interface for users to browse the menu, make reservations, and contact the restaurant. The backend is powered by Express.js, and the frontend is designed for a seamless user experience.
 
-Technologies Used
 
-Frontend:
-HTML5
-CSS3
-JavaScript
+![Restaurant Web App](relative/path/to/your/image.png)  
 
-Backend:
-Node.js
-Express.js
 
-Database :
-MongoDB 
+## **Technologies Used**
 
-Setup Instructions
-Step 1: Clone the Repository
-bash
-Copy code
+- **Frontend:**
+  - HTML5
+  - CSS3
+  - JavaScript
+- **Backend:**
+  - Node.js
+  - Express.js
+- **Database:**
+  - MongoDB 
+
+
+## **Setup Instructions**
+
+### **Step 1: Clone the Repository**
+```bash
 git clone https://github.com/your-username/your-repo-name.git
-Step 2: Install Dependencies
-Navigate to the server/ directory and install dependencies:
+```
 
-bash
-Copy code
+### **Step 2: Install Dependencies**
+Navigate to the `server/` directory and install dependencies:
+```bash
 cd server
 npm install
-Step 3: Run the Application
+```
+
+### **Step 3: Run the Application**
 Start the Node.js server:
-
-bash
-Copy code
+```bash
 node app.js
-The app will be available at http://localhost:3000.
+```
+The app will be available at `http://localhost:3000`.
 
-Screenshots
-Home Page
+---
 
-Menu Page
+## **Contributing**
 
-(Add more screenshots as needed.)
-
-Contributing
 Contributions are welcome! To contribute:
-
-Fork the repository.
-Create a new branch (git checkout -b feature-name).
-Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin feature-name).
-Open a pull request.
-
-
-
-
-
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
